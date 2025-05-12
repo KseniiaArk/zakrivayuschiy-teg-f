@@ -38,7 +38,6 @@
   font-family: var(--accent-font), sans-serif;
   font-weight: var(--main-weight);
   margin: 0 auto;
-  max-inline-size: 700px;
 }
 
 .title {
@@ -267,7 +266,7 @@
 }
 
 .difficult {
-  filter: contrast(0.45);
+  filter: invert(82%);
 }
 
 .saving-spot-container {
