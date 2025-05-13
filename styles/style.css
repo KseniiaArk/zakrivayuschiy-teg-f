@@ -22,7 +22,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--color);
-  padding: 100px 0 103px;
+  /*padding: 100px 0 103px;*/
+  font-size: 18px;
 }
 
 .header {
@@ -31,13 +32,16 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  max-inline-size: 700px;
-  min-block-size: clamp(327px, 100vh, 368px);
+  max-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  /*width: clamp(375px, 100vw, 700px);
+  block-size: clamp(327px, 100vh, 368px);*/
   border: 2px solid var(--border-color);
   background-color: var(--background-color);
   font-family: var(--accent-font), sans-serif;
   font-weight: var(--main-weight);
-  margin: 0 auto;
+  margin: 100px auto;
+  padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  padding-inline: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
 }
 
 .title {
@@ -57,14 +61,14 @@
 }
 
 .content {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 50px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-inline-size: 700px;
+  max-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  margin-bottom: 103px;
 }
 
 .card {
@@ -123,7 +127,7 @@
 }
 
 .content_card-text {
-  padding: 26px 25px 25px;
+  padding: 25px 25px 25px;
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -138,7 +142,7 @@
   display: flex;
   justify-content: end;
   align-items: end;
-  gap: 7px;
+  gap: 1px;
   padding: 0px 25px 25px 0px;
   max-block-size: 38px;
   margin-top: 24px;
@@ -208,7 +212,6 @@
   transform: scaleX(1);
 }
 
-
 .button__text {
   position: relative;
   z-index: 1;
@@ -223,10 +226,8 @@
 
 .content_card-button {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding: 15px 20px;
+  padding: 14px 19px;
   gap: 8px;
 }
 
@@ -238,35 +239,35 @@
 }
 
 .first_step {
-  filter: brightness(1.4);
+  filter: brightness(40%);
 }
 
 .first_trouble {
-  filter: contrast(0.8);
+  filter: contrast(80%);
 }
 
 .first-success {
-  filter: saturate(3);
+  filter: saturate(4);
 }
 
 .perfection {
-  filter: blur(1.3);
+  filter: blur(5px);
 }
 
 .support {
-  filter: opacity(0.75);
+  filter: opacity(75%);
 }
 
 .strategy {
-  filter: grayscale(0.35);
+  filter: grayscale(35%);
 }
 
 .concentration {
-  filter: contrast(1.5) brightness(0.8) blur(0.4);
+  filter: invert(15%) blur(1px) saturate(50%);
 }
 
 .difficult {
-  filter: invert(82%);
+  filter: invert(45%);
 }
 
 .saving-spot-container {
@@ -309,30 +310,27 @@
   background: var(--color);
 }
 
-@media (width <= 375px) {
-  .page {
-    padding-bottom: 100px;
+@media (width: 375px) {
+  .header {
+    inline-size: 100%;
   }
 
-  .header_mobile {
-    min-block-size: 327px;
-    width: 100%;
-    min-width: 320px;
-  }
-
-  .mobile_content {
-    width: 100%;
-    min-width: 320px;
+  .content {
+    inline-size: 100%;
+    margin-bottom: 100px;
   }
 
   .content_card-button {
     flex-direction: column;
+    margin-inline: 34.5px;
   }
 
   .content_card-button-icon {
     inline-size: 29px;
     block-size: 29px;
   }
+
+
 }
 
 
