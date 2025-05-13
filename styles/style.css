@@ -32,26 +32,27 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  max-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   border: 2px solid var(--border-color);
   background-color: var(--background-color);
   font-family: var(--accent-font), sans-serif;
   font-weight: var(--main-weight);
   margin: 0 auto 100px;
   padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
-  padding-inline: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
+}
+
+.common_width {
+  inline-size: clamp(375px,16.2852rem + 30.5164vw,700px);
 }
 
 .title {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
-  font-weight: inherit;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: uppercase;
 }
 
 .subtitle {
   font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+}
+
+.header_font_uppercase {
   font-weight: inherit;
   line-height: 100%;
   letter-spacing: 0%;
