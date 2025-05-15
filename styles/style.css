@@ -100,14 +100,13 @@
 
 .content_card-cover-watermark {
   position: absolute;
-  top: 25px;
+  top: 24px;
   right: 25px;
   opacity: 0.5;
   color: inherit;
   font-family: var(--accent-font), fantasy;
   font-weight: var(--main-font);
   font-size: 14px;
-  font-weight: var(--main-weight);
   line-height: 100%;
   letter-spacing: 0%;
   mix-blend-mode: hard-light;
