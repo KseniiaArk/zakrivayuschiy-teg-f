@@ -297,6 +297,10 @@
   margin: auto;
 }
 
+.button_uppercase {
+  text-transform: uppercase;
+}
+
 .saving-spot-container[open] {
   display: grid;
   grid-template-rows: repeat(2, min-content);
